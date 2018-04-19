@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 参考 https://blog.csdn.net/wangdongsong1229/article/details/17463113 -->
+<configuration>
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <Target>System.out</Target>
+        <encoder>
+            <!--<pattern>%-5p [%-20t] %-22c{0} L:%-3L - %m%n</pattern>-->
+            <pattern>%-5p - %m%n</pattern>
+            <charset>utf-8</charset>
+        </encoder>
+
+        <!-- 此日志appender是为开发使用，只配置最底级别，控制台输出的日志级别是大于或等于此级别的日志信息-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+    </appender>
+
+    <logger name="org.logback.test.LogbackTest" level="DEBUGE" />
+
+    <root level="DEBUGE">
+        <!--<appender-ref ref="FILE"/>-->
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>

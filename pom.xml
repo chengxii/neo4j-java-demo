@@ -7,6 +7,68 @@
     <groupId>com.cx</groupId>
     <artifactId>neo4j-java-demo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>Neo4j</name>
+    <packaging>jar</packaging>
+
+    <properties>
+        <spring.version>5.0.5.RELEASE</spring.version>
+        <neo4j.version>3.3.4</neo4j.version>
+        <neo4j-driver.version>1.5.1</neo4j-driver.version>
+        <logback.verson>1.2.3</logback.verson>
+    </properties>
+
+    <dependencies>
+        <!-- 一个包含最常用的Neo4j库的元数据包 -->
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j</artifactId>
+            <version>${neo4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j.driver</groupId>
+            <artifactId>neo4j-java-driver</artifactId>
+            <version>${neo4j-driver.version}</version>
+        </dependency>
+        <!-- spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.data</groupId>
+            <artifactId>spring-data-neo4j</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <!-- test -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.0.5.RELEASE</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+
+        <!-- log -->
+        <!-- logback-core 是其它模块的基础设施，其它模块基于它构建，logback-core 提供了一些关键的通用机制 -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.verson}</version>
+        </dependency>
+        <!-- 改善了 log4j，且自身实现了 SLF4J API，所以即使用 Logback 你仍然可以使用其他的日志实现，如原始的 Log4J，java.util.logging 等 -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
     <build>
         <plugins>
