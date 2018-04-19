@@ -1,0 +1,37 @@
+# Created by .ignore support plugin (hsz.mobi)
+### IntelliJ IDEA Project files
+.idea
+*.iml
+target
+out
+
+### Eclipse Project files
+.classpath
+.project
+.settings/
+bin/
+gen/
+
+### Other
+*.bak
+*.tem
+*.temp
+#.swp
+*.*~
+~*.*
+
+### Java template
+# Compiled class file
+#*.class
+
+# Log file
+*.log
+
+# Package Files #
+#*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
