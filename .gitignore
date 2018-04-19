@@ -2,6 +2,8 @@
 ### IntelliJ IDEA Project files
 .idea
 *.iml
+*.ipr
+*.iws
 target
 out
 
@@ -34,4 +36,3 @@ gen/
 *.zip
 *.tar.gz
 *.rar
-
