@@ -29,6 +29,18 @@
             <artifactId>neo4j-java-driver</artifactId>
             <version>${neo4j-driver.version}</version>
         </dependency>
+        <!-- Neo4j内核是一个轻量级的嵌入式Java数据库，其设计目的是将数据结构存储为图形而不是表 -->
+<!--        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j-kernel</artifactId>
+            <version>${neo4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.neo4j</groupId>
+            <artifactId>neo4j-enterprise-kernel</artifactId>
+            <version>${neo4j.version}</version>
+            &lt;!&ndash;<scope>test</scope>&ndash;&gt;
+        </dependency>-->
         <!-- spring -->
         <dependency>
             <groupId>org.springframework</groupId>

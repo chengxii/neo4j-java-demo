@@ -26,6 +26,7 @@ gen/
 
 # Log file
 *.log
+log
 
 # Package Files #
 #*.jar
@@ -34,3 +35,4 @@ gen/
 *.zip
 *.tar.gz
 *.rar
+/log/
