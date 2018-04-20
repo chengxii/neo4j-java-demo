@@ -2,6 +2,8 @@
 ### IntelliJ IDEA Project files
 .idea
 *.iml
+*.ipr
+*.iws
 target
 out
 
@@ -35,4 +37,3 @@ log
 *.zip
 *.tar.gz
 *.rar
-/log/
