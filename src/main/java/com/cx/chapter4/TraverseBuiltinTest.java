@@ -78,5 +78,4 @@ public class TraverseBuiltinTest {
             LOGGER.info("查找电影: " + movie.getProperty("name"));
         }
     }
-
 }

@@ -90,7 +90,7 @@ public class TraverseCoreAPITest {
     /**
      * 找到 程希 已经看过的所有电影(功能改进)
      * 用名字过滤关系是图形遍历
-     * @see IterableTest#getCxHasSeenMovies()
+     * @see TraverseCoreAPITest#getCxHasSeenMovies()
      */
     private void getCxHasSeenMoviesPro() {
         // 使用getRelationships(RelationshipType type)方法获得指定类型(起始或终止于给定节点)的所有关系
