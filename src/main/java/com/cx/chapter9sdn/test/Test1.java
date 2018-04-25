@@ -1,13 +1,10 @@
 package com.cx.chapter9sdn.test;
 
 import com.cx.chapter9sdn.conf.MyConfiguration;
-import com.cx.chapter9sdn.domain.Movie;
 import com.cx.chapter9sdn.domain.Person;
-import com.cx.chapter9sdn.domain.Person1;
 import com.cx.chapter9sdn.repo.PersonRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.neo4j.ogm.session.Session;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.test.context.ContextConfiguration;
