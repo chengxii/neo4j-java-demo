@@ -14,36 +14,36 @@ import org.neo4j.ogm.annotation.StartNode;
 @RelationshipEntity(type = "HAS_SEEN")
 public class ViewingRel {
 
-    @Id
-    @GeneratedValue
-    private Long id;
-    @StartNode
-    private User user;
-    @EndNode
-    private Movie movie;
-    private Integer starts;
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public Movie getMovie() {
-        return movie;
-    }
-
-    public void setMovie(Movie movie) {
-        this.movie = movie;
-    }
-
-    public Integer getStarts() {
-        return starts;
-    }
-
-    public void setStarts(Integer starts) {
-        this.starts = starts;
-    }
+    // @Id
+    // @GeneratedValue
+    // private Long id;
+    // @StartNode
+    // private User user;
+    // @EndNode
+    // private Movie movie;
+    // private Integer starts;
+    //
+    // public User getUser() {
+    //     return user;
+    // }
+    //
+    // public void setUser(User user) {
+    //     this.user = user;
+    // }
+    //
+    // public Movie getMovie() {
+    //     return movie;
+    // }
+    //
+    // public void setMovie(Movie movie) {
+    //     this.movie = movie;
+    // }
+    //
+    // public Integer getStarts() {
+    //     return starts;
+    // }
+    //
+    // public void setStarts(Integer starts) {
+    //     this.starts = starts;
+    // }
 }

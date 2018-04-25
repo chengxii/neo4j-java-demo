@@ -18,20 +18,22 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 public class MyConfiguration {
 
     @Bean
-    public SessionFactory getSessionFactory() {
-        return new SessionFactory(configuration(), "com.cx.chapter9sdn.domain");
-    }
-
-    @Bean
     public Neo4jTransactionManager transactionManager() throws Exception {
         return new Neo4jTransactionManager(getSessionFactory());
     }
 
     @Bean
+    public SessionFactory getSessionFactory() {
+        return new SessionFactory(configuration(), "com.cx.chapter9sdn.domain");
+        // return new SessionFactory(configuration());
+    }
+
+    @Bean
     public org.neo4j.ogm.config.Configuration configuration() {
-        return new org.neo4j.ogm.config.Configuration.Builder()
+        org.neo4j.ogm.config.Configuration configuration = new org.neo4j.ogm.config.Configuration.Builder()
                 .uri("bolt://localhost")
                 .credentials("neo4j", "root")
                 .build();
+        return configuration;
     }
 }
